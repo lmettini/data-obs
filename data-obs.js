@@ -1,4 +1,4 @@
-var dataObs = (function () {
+window.dataObs = (function () {
     "use strict";
     /*jslint plusplus: true */
     var expose = {},
