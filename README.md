@@ -4,18 +4,19 @@ Lightweigh data observer, no need to load heavy libraries. Just store your data 
 ## how it works
 You can set or observe data using the same data-id, thats the way the triggers are linked to the data
 ### set data interface
+The dataId is an unique string/interger that will be use to observe any change in the future of the data stored in it, the data could be any type of Object
 ```javascript
-// The dataId is the one you will have to use to observe any change in the future, the dataId should be a string/interger and the data could be any Object
 dataObs.set(dataId ,data);
 ```
 ### observe interface
+To observe the changes of a dataId you need to create a function with one parameter, this function is the trigger that is executed every time the data change. When a trigger is execute in case there is any data already stored.
 ```javascript
 dataObs.observe(dataId ,function(data){
-    // here you can work with the data, this function is the triggers that is executed every time the data change. When a trigger is execute in case there is any data already stored.
+    // do your stuff here :)
 });
 ```
 ### get data interface
+Also you can check the value that a dataId have assign
 ```javascript
-// Also you can check the value that a dataId have assign
 dataObs.get(dataId);
 ```
