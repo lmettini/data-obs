@@ -20,3 +20,6 @@ Also you can check the value that a data-id have assigned
 ```javascript
 dataObs.get('data-id');
 ```
+# License
+
+MIT
